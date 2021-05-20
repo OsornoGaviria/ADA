@@ -1,0 +1,31 @@
+
+<ion-content padding>
+  <div style="width: 80%; margin:auto; margin-top: 25%;"> 
+  <ion-item lines="none">
+        <ion-label style="font-size: 32px; margin: auto;"><strong>Prueba ADA </strong></ion-label>
+    </ion-item>
+   <div style="margin-top: 20px;">
+    <ion-item>
+      <ion-label position="stacked">CORREO (*)</ion-label>
+      <ion-input type="text" placeholder="" [(ngModel)]="email" name="email"></ion-input>
+  </ion-item>
+  <ion-item>
+
+    <ion-label position="stacked">CONTRASEÑA (*)</ion-label>
+    <ion-input type="password"  placeholder="" [(ngModel)]="password" name="password"></ion-input>
+  </ion-item>  
+  </div>
+
+
+  <div style="margin-top: 70px; margin: auto; width: 100%; text-align: center;">
+
+    <ion-button shape="round" color="dark" style="margin-top: 40px !important; width: 70%; margin: auto;"  expand="block"    (click)="OnSubmitLogin()" >LOGUIN</ion-button>
+  
+  </div> 
+ 
+ 
+  </div>
+  
+</ion-content>
+
+

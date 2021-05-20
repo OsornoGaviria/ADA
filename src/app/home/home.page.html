@@ -1,0 +1,51 @@
+
+<ion-header  no-border class="ion-no-border">
+  <ion-toolbar color="primary" class="toolbar-home" style="height: 60px;">
+    <ion-button (click)="salir()" slot="end" fill="clear">
+      <ion-icon color="light" name="log-out-outline"></ion-icon>
+    </ion-button>
+   
+    <ion-title style="text-align: center">
+        Prueba ADA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="card-background-page">
+  
+
+    <div style="width: 95%; margin: auto !important;">
+      <ion-item-group>
+        <ion-item-divider style="text-align: right;" lines="none">
+          
+              <ion-label>Productos</ion-label>
+     
+        </ion-item-divider>
+            <ion-item  *ngFor="let prod of productos; let i=index" >
+              <ion-icon slot="start" name="pricetag-outline"></ion-icon>
+                <ion-label>
+                   <p>{{prod.descripcion}}</p>   
+                  <p>${{prod.valor |  number}}</p>
+                </ion-label>
+                <ion-button (click)="delete(prod.id)" slot="end" fill="clear">
+                  <ion-icon name="trash-outline" color="danger"></ion-icon>
+                </ion-button>
+                <ion-button (click)="editar(prod.id)" slot="end" fill="clear"> 
+                  <ion-icon name="create-outline" color="warning"></ion-icon>
+                </ion-button>
+            </ion-item>
+
+      </ion-item-group> 
+
+      <div style="margin-top:10px; text-align: center;">
+        <ion-button (click)="nuevoP()" shape="round" style="margin: auto;" >Nuevo Producto</ion-button>
+        <div style="height: 10px;"></div>
+      </div>
+
+
+    </div>
+
+
+
+  
+</ion-content>

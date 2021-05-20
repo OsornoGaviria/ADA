@@ -1,0 +1,29 @@
+<ion-header  no-border class="ion-no-border">
+  <ion-toolbar color="primary" class="toolbar-home" style="height: 60px;">
+    <ion-button slot="start" fill="clear" routerLink="/home">
+      <ion-icon name="chevron-back-outline" color="light"></ion-icon>
+    </ion-button>
+   
+    <ion-title>
+       Editar Producto 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-item>
+  <ion-label position="stacked">Descripción</ion-label>
+  <ion-input type="text" value=""  [(ngModel)]="producto" name="name" ></ion-input> 
+
+</ion-item>
+<ion-item>
+  <ion-label position="stacked">Valor</ion-label>
+  <ion-input type="number"    [(ngModel)]="valor" name="name" ></ion-input> 
+
+</ion-item>
+
+<div style="margin-top:10px; text-align: center;">
+  <ion-button (click)="editar()" shape="round" style="margin: auto;" >Editar Producto</ion-button>
+  <div style="height: 10px;"></div>
+</div>
+</ion-content>

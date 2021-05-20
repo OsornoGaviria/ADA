@@ -1,0 +1,7 @@
+{
+  "name": "Guía Comercial",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,14 @@
+{
+  "appId": "guia.comercial_norte2021",
+  "appName": "Guía Comercial",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 7000,
+      "launchAutoHide": true
+    }
+  },
+  "cordova": {}
+}
